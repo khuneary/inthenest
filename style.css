@@ -1,0 +1,208 @@
+/* Global box model */
+* {
+  box-sizing: border-box;
+}
+
+/* Page background + text defaults */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #fafafa;
+  color: #222;
+}
+
+/* Wrapper keeps content centered on large screens */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header / Logo Area */
+header.site-header {
+  background-color: #2f2f2f;
+  background-image: url("inthenestlogo.png");
+  background-repeat: no-repeat;
+  background-position: center 1rem;
+  background-size: 120px auto;
+  color: #ffffff;
+  text-align: center;
+  padding: 5rem 1rem 2rem 1rem;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.site-tagline {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #ccc;
+}
+
+/* Navigation */
+nav.site-nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #2f2f2f;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  outline: 2px solid transparent;
+  border-bottom: 2px solid #2f2f2f;
+}
+
+/* Main content area */
+main {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+main h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #2f2f2f;
+}
+
+main h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+main p {
+  margin-top: 0;
+  max-width: 70ch;
+}
+
+/* Centered text utility class */
+.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* "card" blocks for reusable visual sections */
+.feature-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fdfdfd;
+}
+
+/* Simple responsive image placeholder class */
+.img-placeholder {
+  width: 100%;
+  min-height: 160px;
+  border-radius: 4px;
+  border: 1px dashed #aaa;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Gallery grid layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Footer */
+footer.site-footer {
+  margin-top: 2rem;
+  background-color: #2f2f2f;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Table styling with responsive wrapper */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+table.compare-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.compare-table th,
+.compare-table td {
+  border: 1px solid #999;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.compare-table thead {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

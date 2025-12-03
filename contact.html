@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Say hello.">
+  <title>In The Nest | Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+  </header>
+
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="styles.html">Design Styles</a></li>
+      <li><a href="colortheory.html">Color Theory</a></li>
+      <li><a href="gallery.html">Gallery Inspiration</a></li>
+      <li><a href="furniture.html">Furniture Buying Guide</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <main>
+      <h2>Drop Us A Line</h2>
+
+      <section class="feature-card">
+        <h3>Email</h3>
+        <p>
+          <a href="mailto:hello@inthenest.com">hello@inthenest.com</a>
+        </p>
+      </section>
+  <main>
+    <h2>Contact In The Nest</h2>
+    <p>Fill out the form below to contact us. All information is required.</p>
+<form method="post" action="https://webdevbasics.net/scripts/inthenest.php">
+  <label for="myName">Name:</label>
+  <input type="text" name="myName" id="myName" required>
+  
+  <label for="myEmail">E-mail:</label>
+  <input type="email" name="myEmail" id="myEmail" required>
+  
+  <label for="myReason">Reason for Contact:</label>
+  <input type="text" name="myReason" id="myReason" list="reasons" required>
+  <datalist id="reasons">
+    <option value="New Client">
+    <option value="Book Appointment">
+    <option value="Custom Design Palette">
+    <option value="Information">
+
+  </datalist>
+  
+  <label for="myComments">Comments:</label>
+  <textarea name="myComments" id="myComments"  required></textarea>
+  
+  <input type="submit" value="Send" id="mySubmit">
+</form>
+
+      <section class="feature-card">
+        <h3>Phone</h3>
+        <p>
+          <a href="tel:315-555-5555">315-555-5555</a>
+        </p>
+      </section>
+
+      <h2>Learn About Us</h2>
+
+      <section class="feature-card">
+        <h3>About In The Nest</h3>
+        <p>
+          In The Nest was created to make interior design education accessible and practical for everyone.
+          We believe that beautiful, functional spaces shouldn't require a design degree or unlimited budget.
+        </p>
+        <p>
+          Our mission is to break down complex design concepts into plain language, provide actionable advice,
+          and help you create spaces that truly reflect your personal style and needs.
+        </p>
+        <p>
+          Whether you're furnishing your first apartment or refreshing a long-time home, we're here to guide
+          you with honest, practical information you can trust.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy;2025 In The Nest | Privacy | <a href="contact.html">Contact Info</a></p>
+    </footer>
+  </div>
+</body>
+</html>
